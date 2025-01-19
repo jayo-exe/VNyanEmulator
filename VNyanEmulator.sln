@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNyanEmulator", "VNyanEmulator.csproj", "{5D713D3C-1699-4283-AB52-0FCBF6C9CABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JayoPluginLoader", "..\JayoPluginLoader\JayoPluginLoader.csproj", "{CCFF924F-BCBD-4E56-91D0-0162282A53CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D713D3C-1699-4283-AB52-0FCBF6C9CABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D713D3C-1699-4283-AB52-0FCBF6C9CABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D713D3C-1699-4283-AB52-0FCBF6C9CABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D713D3C-1699-4283-AB52-0FCBF6C9CABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFF924F-BCBD-4E56-91D0-0162282A53CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFF924F-BCBD-4E56-91D0-0162282A53CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFF924F-BCBD-4E56-91D0-0162282A53CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFF924F-BCBD-4E56-91D0-0162282A53CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D61473E1-20B5-4503-A36A-15D3021AB733}
+	EndGlobalSection
+EndGlobal
