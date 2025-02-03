@@ -37,7 +37,7 @@ namespace VNyanEmulator
             Logger.LogInfo($" [Parameter] Setting the string parameter named {parameterName} with a value of {value}");
             VNyanStringParameters.TryGetValue(parameterName, out string oldValue);
             VNyanStringParameters[parameterName] = value;
-            StringParameterChanged.Invoke(parameterName, value, oldValue);
+            StringParameterChanged?.Invoke(parameterName, value, oldValue);
         }
 
         public string getVNyanParameterString(string parameterName)
@@ -51,7 +51,7 @@ namespace VNyanEmulator
             Logger.LogInfo($" [Parameter] Setting the float parameter named {parameterName} with a value of {value}");
             VNyanFloatParameters.TryGetValue(parameterName, out float oldValue);
             VNyanFloatParameters[parameterName] = value;
-            FloatParameterChanged.Invoke(parameterName, value, oldValue);
+            FloatParameterChanged?.Invoke(parameterName, value, oldValue);
         }
 
         public float getVNyanParameterFloat(string parameterName)
@@ -80,7 +80,7 @@ namespace VNyanEmulator
             if (!VNyanDictionaries.ContainsKey(dictionaryName)) VNyanDictionaries.Add(dictionaryName, []);
             VNyanDictionaries[dictionaryName].TryGetValue(keyName, out string oldValue);
             VNyanDictionaries[dictionaryName][keyName] = value;
-            DictionaryValueChanged.Invoke(dictionaryName, keyName, value, oldValue);
+            DictionaryValueChanged?.Invoke(dictionaryName, keyName, value, oldValue);
         }
 
         public void clearVNyanDictionary(string dictionaryName)
@@ -88,7 +88,7 @@ namespace VNyanEmulator
             Logger.LogInfo($" [Parameter] Clearing the dictionary named {dictionaryName}");
             if (!VNyanDictionaries.ContainsKey(dictionaryName)) return;
             VNyanDictionaries.Remove(dictionaryName);
-            DictionaryCleared.Invoke(dictionaryName);
+            DictionaryCleared?.Invoke(dictionaryName);
         }
 
     }

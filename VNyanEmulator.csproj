@@ -73,13 +73,4 @@
 		</Reference>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Compile Update="VNyanTestAvatar.cs">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Compile>
-	  <Compile Update="VNyanTestHarness.cs">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </Compile>
-	</ItemGroup>
-
 </Project>

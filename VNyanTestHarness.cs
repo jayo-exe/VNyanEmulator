@@ -32,6 +32,8 @@ namespace VNyanEmulator
                 DontDestroyOnLoad(gameObject);
             }
 
+            gameObject.AddComponent<VNyanPluginLoader>();
+            
             if (GameObject.FindObjectOfType<EventSystem>() == null)
             {
                 var eventSystem = new GameObject("EventSystem", typeof(EventSystem), typeof(StandaloneInputModule));

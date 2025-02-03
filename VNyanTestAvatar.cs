@@ -25,7 +25,7 @@ namespace VNyanEmulator
 
         public static void SetAvatar(GameObject newAvatar)
         {
-            Logger.LogInfo($" [Avatar] Setting Avatar to {newAvatar.name}");
+            Logger.LogInfo($" [Avatar] Setting Avatar to {(newAvatar == null ? "None!" : newAvatar.name)}");
             avatar = newAvatar;
         }
 
