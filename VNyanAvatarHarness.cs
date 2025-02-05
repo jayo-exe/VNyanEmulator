@@ -10,6 +10,7 @@ namespace VNyanEmulator
     public class VNyanAvatarHarness : MonoBehaviour
     {
         public GameObject AvatarObject;
+        private GameObject lastAvatarObject;
 
         private void OnEnable()
         {
@@ -18,12 +19,19 @@ namespace VNyanEmulator
                 AvatarObject = transform.GetChild(0).gameObject;
             }
 
-            if (AvatarObject == null) return;
             VNyanTestAvatar.SetAvatar(AvatarObject);
         }
         private void OnDisable()
         {
             VNyanTestAvatar.SetAvatar(null);
+        }
+
+        private void Update()
+        {
+            if (AvatarObject == lastAvatarObject) return;
+            VNyanTestAvatar.SetAvatar(null);
+            VNyanTestAvatar.SetAvatar(AvatarObject);
+            lastAvatarObject = AvatarObject;
         }
     }
 }
